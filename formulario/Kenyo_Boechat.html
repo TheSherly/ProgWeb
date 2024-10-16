@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <section>
+        <form action="">
+            <label for="rga">RGA:</label>
+            <span id=spanRgaErro>Preencha corretamente o RGA</span>
+            <input type="text" id="rga" placeholder="9999.9999.999-9" pattern="[0-9]{4}.[0-9]{4}.[0-9]{3}-[0-9]{1}" onfocusout="validaRga()" required>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" >
+            
+            <label for="senha">Defina uma senha:</label>
+            <input type="text" id="senha" >
+            <span id=senhaErro>Senhas diferentes</span>
+            
+            <label for="confisenha">Confirme a senha:</label>
+            <input type="text" id="confisenha" onfocusout="validaSenha()" required>
+        </form>
+        
+        <fieldset>
+            <legend>Tipo de permissão:</legend>
+            <input type="radio" id="Estudante" name="tipo" value="ESTUDANTE">
+            <label for="Estudante">Estudante</label>
+            
+            <input type="radio" id="Monitor" name="tipo" value="MONITOR">
+            <label for="Monitor">Monitor</label>
+            
+            <input type="radio" id="Ouvinte" name="tipo" value="OUVINTE">
+            <label for="Ouvinte">Ouvinte</label>
+            
+        </fieldset>
+        
+
+        <form >
+            <label for="dataIni">Data de início das atividades:</label>
+            <input type="date" id="dataIni" name="Data" onfocusout="validaDate()" required>
+            <span id=dataErro> Data inválida</span>
+            <input id= "enviar" type="submit">
+          </form>
+    </section>
+    
+</body>
+</html>

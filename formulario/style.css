@@ -1,0 +1,34 @@
+body {
+	font: 1em sans-serif;
+}
+
+form {
+	margin: 10px;
+	padding: 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="submit"] {
+	display: block;
+}
+label.fieldset {
+	color: red;
+}
+
+input,
+fieldset {
+	border: 1px solid #333;
+	margin: 10px;
+}
+
+span {
+    
+	margin-bottom: 10px;
+	color: red;
+	font-style: italic;
+	font-size: 80%;
+	display: none;
+}

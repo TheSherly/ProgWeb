@@ -1,0 +1,91 @@
+body {
+	font: 14px Times, sans-serif;
+	background-color: #f1f3f4;
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	grid-template-areas:
+		"header header"
+		"perfil footer"
+		"perfil academica"
+		"profissional competencias";
+}
+
+h1,
+h2 {
+	font-family: "Sofia";
+	font-style: italic;
+	text-shadow: 2px 2px 2px #ababab;
+}
+
+section,
+footer,
+header,
+.foto img {
+	border-radius: 50px 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #bfcdc1;
+}
+section,
+footer,
+header {
+	margin: 10px;
+	padding: 20px;
+	display: table;
+}
+.foto img {
+	display: inline;
+}
+
+hr {
+	display: none;
+	/*border: 1px solid #999999;
+	width: 80px;*/
+}
+header {
+	grid-area: header;
+	display: flex;
+	align-items: center;
+	align-content: flex-start;
+	gap: 30px;
+	background-color: #e3e0e9;
+}
+
+footer {
+	grid-area: footer;
+	background-color: #e3e0e9; /*#eceff4;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+}
+section#perfil {
+	grid-area: perfil;
+	background-color: #e3e0e9;
+}
+section#competencias {
+	grid-area: competencias;
+	background-color: #e3e0e9;
+}
+section#academica {
+	grid-area: academica;
+	background-color: #e3e0e9;
+}
+section#profissional {
+	grid-area: profissional;
+	background-color: #e3e0e9;
+}
+
+.foto,
+.identificacao {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+img {
+	display: none;
+}
+br {
+	display: none;
+}

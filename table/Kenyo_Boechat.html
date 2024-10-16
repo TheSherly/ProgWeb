@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <header>
+        <h1>Kenyo Boechat</h1>
+    </header>
+    
+    <section>
+        <header>
+            <h1>Formulários</h1>
+        </header>
+        <form> 
+            <label for="username">Nome:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Senha:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Insira suas informações pessoais:</p>
+        <form>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="999.999.999-99" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"><br>
+            <label for="phone">Numero:</label>
+            <input type="tel" name="phone" id="phone" placeholder="(DDD)9999-9999" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}"><br>
+            <label for="email">Endereço de Email:</label>
+            <input type="email" id="email" name="email">
+        </form>
+    </section>
+    <header>
+        <h1>Listas:</h1>
+        <h2>Navegadores mais populares no Brasil em 2024:</h2>
+    </header>
+        <ol>
+            <li>Chrome (72,37%) </li>
+            <li>Opera (10,01%)</li>
+            <li>Edge (8,75%)</li>
+            <li>Firefox (5,23%) </li>
+            <li>Safari (1,46%)</li>
+        </ol>
+        <h2>Linguagens de marcação:</h2>
+        <dl>
+            <dt>SGML</dt>
+            <dd>Standard Generalized Markup Language é uma linguagem de marcação padrão, também sendo uma metalinguagem de marcação para definição de outras linguagens de marcação.</dd>
+            <dt>XML</dt>
+            <dd>Extensible Markup Language (Linguagem de Marcação Extensível) é uma de linguagem de marcação derivada da linguagem SGML, utilizada para compartilhamento fácil de informações.</dd>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language (Linguagem de Marcação de Hipertexto) é uma de linguagem de marcação derivada da linguagem SGML criada para conteúdos hipertexto.</dd>
+        </dl>
+
+    <section>
+        <header>
+            <h1>Tabela</h1> 
+        </header>
+        <table>
+            <tr>
+                <th>Categoria</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Jogos Eletrônicos</td>
+                <td>Mario Party</td>
+                <td>R$ 159,99</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>The legend of Zelda</td>
+                <td>R$ 350,00</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>CAstle of Illusion</td>
+                <td>R$ 259,90</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Brinquedo</td>
+                <td>Carrinhos - Hot Wheels - Pacote com 5 Carros</td>
+                <td>R$ 74,99</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Lego Classic - Caixa pequena</td>
+                <td>R$199,90</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>1394,66</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+    </section>
+    
+</body>
+</html>
